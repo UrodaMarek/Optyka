@@ -1,3 +1,4 @@
 # exclude compiled css files
 style.css
+color.css
 /css
