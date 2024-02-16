@@ -1,0 +1,22 @@
+nav {
+    section {
+        float: left;
+
+        :first-child {
+            margin: 0;
+        }
+
+        div {
+            float: left;
+        }
+    }
+    :first-child {
+        margin-right: calc(100vw - 134.267px - 20.8167px); //TODO: Make it smarter
+    }
+    :last-child {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        clear: both;
+    }
+}
