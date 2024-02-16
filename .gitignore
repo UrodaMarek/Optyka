@@ -1,0 +1,3 @@
+# exclude compiled css files
+style.css
+/css
