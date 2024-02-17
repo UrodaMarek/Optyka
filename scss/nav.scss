@@ -1,17 +1,20 @@
 nav {
+    width: 100%;
     section {
         float: left;
 
         :first-child {
-            margin: 0;
+            margin: 0 !important;
+            width: fit-content;
         }
 
-        div {
+        div, a {
             float: left;
+            padding: 10px;
         }
     }
     :first-child {
-        margin-right: calc(100vw - 134.267px - 20.8167px); //TODO: Make it smarter
+        margin-right: calc(100vw - 219.7px - 60.8167px); //TODO: Make it smarter
     }
     :last-child {
         margin: 0;

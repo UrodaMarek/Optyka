@@ -12,7 +12,9 @@
             <section>
                 <div>Plik</div>
                 <div>Pomoc</div>
-                <div>D/L</div>
+                <a id="themeSwitcher" onclick="changeTheme()">
+                    <div>D</div>
+                </a>
                 <div><-</div>
                 <div>-></div>
                 <div></div>
@@ -28,11 +30,12 @@
     <main>
         <section>
             <div id="description" style="display: none;">
-                <header></header>
-                <section></section>
-                <section></section>
+                <header>A</header>
+                <section>B</section>
+                <section>C</section>
             </div>
-            <div id="button">></div>
+            <button onclick="changeVisibility()">></button>
+            <div></div>
         </section>
         <section id="board">
 

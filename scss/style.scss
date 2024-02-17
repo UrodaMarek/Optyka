@@ -8,27 +8,33 @@ body{
     margin: 0;
 }
 
-header {
-    width: 100%;
-}
-
 main {
+    height: calc(100vh - 42px);
     position: relative;
     :first-child {
+        div, button, :first-child {
+            :first-child {
+                height: fit-content;
+            }
+            overflow: scroll;
+            position: static;
+            float: left;
+        }
+        :last-child {
+            clear: both;
+        }
         position: absolute;
-        height: calc(100vh - 22px);
+        height: 100%;
     }
-}
-
-section {
-    float: left;
 }
 
 #board {
     width: 100%;
-    height: calc(100vh - 22px); //TODO: Make it smarter
+    height: 100%;
 }
 
-#button {
-    height: 100%; //TODO: Make content vertical centered
+button {
+    border: none;
+    height: 100%;
+    padding: calc(50vh - 8.95px - 22px) 20px; //TODO: Make it smarter
 }
