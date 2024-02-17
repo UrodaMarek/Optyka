@@ -12,6 +12,9 @@ nav {
             float: left;
             padding: 10px;
         }
+        a:hover {
+            cursor: pointer;
+        }
     }
     :first-child {
         margin-right: calc(100vw - 219.7px - 60.8167px); //TODO: Make it smarter

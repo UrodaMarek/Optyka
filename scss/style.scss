@@ -38,3 +38,6 @@ button {
     height: 100%;
     padding: calc(50vh - 8.95px - 22px) 20px; //TODO: Make it smarter
 }
+button:hover {
+        cursor: pointer;
+    }
