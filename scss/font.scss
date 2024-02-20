@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: Lato;
+    src: url(../font/Lato/Lato-Regular.ttf) format('truetype');
+}
 
 body {
     font-family: "Lato", sans-serif;
@@ -6,4 +9,4 @@ body {
     font-style: normal;
 }
 
-//TODO: change it to local font and check is it allowed.
+//TODO: Before version 1.0 delete all fonts which aren't used.
