@@ -1,28 +1,29 @@
 nav {
-    width: 100%;
-    section {
-        float: left;
+  width: 100%;
+  section {
+    float: left;
 
-        :first-child {
-            margin: 0 !important;
-            width: fit-content;
-        }
-
-        div, a {
-            float: left;
-            padding: 10px;
-        }
-        a:hover {
-            cursor: pointer;
-        }
-    }
     :first-child {
-        margin-right: calc(100vw - 216.017px - 62.05px); //TODO: Make it smarter
+      margin: 0 !important;
+      width: fit-content;
     }
-    :last-child {
-        margin: 0;
-        padding: 0;
-        width: 0;
-        clear: both;
+
+    div,
+    a {
+      float: left;
+      padding: 10px;
     }
+    a:hover {
+      cursor: pointer;
+    }
+  }
+  :first-child {
+    margin-right: calc(100vw - 216.017px - 62.05px); //TODO: Make it smarter
+  }
+  :last-child {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    clear: both;
+  }
 }

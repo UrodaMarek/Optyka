@@ -4,10 +4,10 @@ $description-light: #b8b8b8;
 $button-light: #77b4b4;
 $content-light: #000000;
 
-$menu-light-hover:#8ecccc;
-$button-light-hover:#66a4a4;
-$menu-dark-hover:#617073;
-$button-dark-hover:#3d4545;
+$menu-light-hover: #8ecccc;
+$button-light-hover: #66a4a4;
+$menu-dark-hover: #617073;
+$button-dark-hover: #3d4545;
 
 $menu-dark: #505f62;
 $board-dark: #272727;
@@ -16,57 +16,57 @@ $button-dark: #2c3434;
 $content-dark: #ffffff;
 
 html[data-theme="dark"] {
+  color: $content-dark;
+  nav {
+    background: $menu-dark;
+  }
+  a:hover {
+    background: $menu-dark-hover;
+  }
+  #description {
+    background: $description-dark;
+  }
+  table {
+    border-color: $content-dark;
+  }
+  button {
     color: $content-dark;
-    nav {
-        background: $menu-dark;
-    }
-    a:hover{
-        background: $menu-dark-hover;
-    }
-    #description {
-        background: $description-dark;
-    }
-    table {
-        border-color: $content-dark;
-    }
-    button {
-        color: $content-dark;
-        background: $button-dark;
-    }
-    button:hover{
-        background: $button-dark-hover;
-    }
-    #board {
-        background: $board-dark;
-    }
+    background: $button-dark;
+  }
+  button:hover {
+    background: $button-dark-hover;
+  }
+  #board {
+    background: $board-dark;
+  }
 }
 
 html[data-theme="light"] {
+  color: $content-light;
+  nav {
+    background: $menu-light;
+  }
+  a:hover {
+    background: $menu-light-hover;
+  }
+  #description {
+    background: $description-light;
+  }
+  table {
+    border-color: $content-light;
+  }
+  button {
     color: $content-light;
-    nav {
-        background: $menu-light;
-    }
-    a:hover {
-        background: $menu-light-hover;
-    }
-    #description {
-        background: $description-light;
-    }
-    table {
-        border-color: $content-light;
-    }
-    button {
-        color: $content-light;
-        background: $button-light;
-    }
-    button:hover {
-        background: $button-light-hover;
-    }
-    #board {
-        background: $board-light;
-    }
+    background: $button-light;
+  }
+  button:hover {
+    background: $button-light-hover;
+  }
+  #board {
+    background: $board-light;
+  }
 }
 
 footer {
-    background: #000000;
+  background: #000000;
 }

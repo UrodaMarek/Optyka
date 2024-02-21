@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl-PL" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Optyka</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <section>
-                <a><div>Plik</div></a>
-                <a><div>Pomoc</div></a>
-                <a id="themeSwitcher" onclick="changeTheme()">
-                    <div>D</div>
-                </a>
-                <a><div><-</div></a>
-                <a><div>-></div></a>
-                <div></div>
-            </section>
-            <section>
-                <a><div>O</div></a>
-                <a><div>+</div></a>
-                <div></div>
-            </section>
-            <div></div>
-        </nav>
+      <nav>
+        <section>
+          <a><div>Plik</div></a>
+          <a><div>Pomoc</div></a>
+          <a id="themeSwitcher" onclick="changeTheme()">
+            <div>D</div>
+          </a>
+          <a><div><-</div></a>
+          <a><div>-></div></a>
+          <div></div>
+        </section>
+        <section>
+          <a><div>O</div></a>
+          <a><div>+</div></a>
+          <div></div>
+        </section>
+        <div></div>
+      </nav>
     </header>
     <main>
-        <section>
-            <div id="description" style="display: none;">
-                <header>A</header>
-                <section>B</section>
-                <section>C</section>
-            </div>
-            <button type="button" onclick="changeVisibility()">></button>
-            <div></div>
-        </section>
-        <section id="board">
+      <section>
+        <div id="description" style="display: none">
+          <header>A</header>
+          <section>B</section>
+          <section>C</section>
+        </div>
+        <button type="button" onclick="changeVisibility()">></button>
+        <div></div>
+      </section>
+      <section id="board">
+        <canvas> </canvas>
+        <!--
+                !In this div, you have a example of structure like laser!
+            -->
 
-        </section>
+        <div class="structureForTesting">
+          <div><!--Image--></div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
