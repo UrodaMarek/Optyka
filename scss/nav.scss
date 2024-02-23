@@ -7,8 +7,6 @@ nav {
       margin: 0 !important;
       width: fit-content;
     }
-
-    div,
     a {
       float: left;
       padding: 10px;
@@ -18,7 +16,7 @@ nav {
     }
   }
   :first-child {
-    margin-right: calc(100vw - 216.017px - 62.05px); //TODO: Make it smarter
+    margin-right: calc(100vw - 220.8px - 71px); //TODO: Make it smarter
   }
   :last-child {
     margin: 0;
@@ -26,4 +24,8 @@ nav {
     width: 0;
     clear: both;
   }
+}
+img {
+  width: 15.5px !important;
+  vertical-align: middle;
 }
