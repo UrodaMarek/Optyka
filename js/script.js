@@ -75,17 +75,8 @@ function stopSimulation() {
 
 
 var html = document.documentElement;
-/*
-  ?Code to testing - Collision system?
-  let canvas = document.querySelector("canvas");
-  console.log(canvas);
-  let canvasContext = canvas.getContext("2d");
-  console.log(canvasContext);
-  canvasContext.strokeStyle = "#ff0000";
-  canvasContext.fillRect(400, 400, 200, 200);
-  console.log("something happened");
-  canvasContext.stroke();
-  console.log(canvasContext);
-  TODO: Make it visible;
-*/
+
+let canvas = document.querySelector("canvas");
+let canvasContext = canvas.getContext("2d");
+canvasContext.fillRect(100, 100, 40, 40);
   
