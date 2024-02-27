@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
     <title>Optyka</title>
   </head>
   <body>
     <header>
       <nav>
         <section>
-          <a><div>Plik</div></a>
-          <a><div>Pomoc</div></a>
+          <a id="togglePanel">Plik</a>
+          <!--PRZYKŁADOWY panel!-->
+          <div id="panel">
+            <a class="btnPanel">Nowy</a>
+            <a class="btnPanel">Otwórz</a>
+            <a class="btnPanel">Zapisz</a>
+            <a class="btnPanel">Zapisz jako</a>
+          </div>
+          <a>Pomoc</a>
           <a id="themeSwitcher" onclick="changeTheme()">
             <div>
               <img src="./img/sun.svg">
@@ -46,6 +53,7 @@
       </nav>
     </header>
     <main>
+      
       <section>
         <div id="description" style="display: none;">
           <header>A</header>
