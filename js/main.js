@@ -1,4 +1,5 @@
-import {startShine} from "./light";
+import {startShine} from "./light.js";
+
 function changeVisibility() {
   let description = document.getElementById("description");
   let button = document.querySelector("button");
@@ -79,6 +80,10 @@ function stopSimulation() {
 
 var html = document.documentElement;
 let canvas = document.querySelector("canvas");
+document.changeVisibility = changeVisibility;
+document.changeTheme = changeTheme;
+document.runSimulation = runSimulation;
+document.stopSimulation = stopSimulation;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
