@@ -39,6 +39,12 @@ html[data-theme="dark"] {
   #board {
     background: $board-dark;
   }
+  #panel {
+    background: $menu-dark;
+  }
+  .btnPanel:hover {
+    background: $menu-dark-hover;
+  }
 }
 
 html[data-theme="light"] {
@@ -64,6 +70,12 @@ html[data-theme="light"] {
   }
   #board {
     background: $board-light;
+  }
+  #panel {
+    background: $menu-light;
+  }
+  .btnPanel:hover {
+    background: $menu-light-hover;
   }
 }
 
