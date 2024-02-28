@@ -1,3 +1,4 @@
+import {startShine} from "./light";
 function changeVisibility() {
   let description = document.getElementById("description");
   let button = document.querySelector("button");
@@ -56,7 +57,9 @@ function runSimulation() {
     switcher.innerHTML = "<div><img src=\"./img/white_stop.svg\"></div>";
   }
 
+  startShine(100, 100, canvasContext)
   console.log("simulation started");
+  
 }
 
 function stopSimulation() {
@@ -75,8 +78,15 @@ function stopSimulation() {
 
 
 var html = document.documentElement;
-
 let canvas = document.querySelector("canvas");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+window.addEventListener("sizeGuard", function() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+
 let canvasContext = canvas.getContext("2d");
-canvasContext.fillRect(100, 100, 40, 40);
-  
+canvasContext.fillRect(100, 100, 100, 100);
