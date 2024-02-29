@@ -58,9 +58,9 @@ function runSimulation() {
     switcher.innerHTML = "<div><img src=\"./img/white_stop.svg\"></div>";
   }
 
-  startShine(100, 100, canvasContext)
-  console.log("simulation started");
   
+  console.log("simulation started");
+  startShine(150, 200, canvasContext)
 }
 
 function stopSimulation() {
@@ -93,5 +93,7 @@ window.addEventListener("sizeGuard", function() {
   canvas.height = window.innerHeight;
 });
 
-let canvasContext = canvas.getContext("2d");
-canvasContext.fillRect(100, 100, 100, 100);
+var canvasContext = canvas.getContext("2d");
+var image = document.querySelectorAll("img");
+canvasContext.drawImage(image[6], 100, 100,200,200);
+
